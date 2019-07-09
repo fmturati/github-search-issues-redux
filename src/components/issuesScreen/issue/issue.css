@@ -1,0 +1,74 @@
+.issue {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background: white;
+  width: 100%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+}
+
+.issue-content {
+  padding: 5px;
+}
+
+.issue-status-section {
+  display: grid;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.issue-status-icons {
+  margin: 2px;
+  height: 12px;
+  width: 12px;
+  opacity: 0.4;
+}
+
+.issue-body {
+  padding: 10px;
+  font-size: 12px;
+  color: var(--secondary-blue-color);
+}
+
+.issue-body--noDescription {
+  color: var(--secondary-grey-color);
+}
+
+.issue-link {
+  padding: 0;
+}
+
+.issue-header {
+  position: relative;
+}
+
+.issue-title {
+  background: var(--main-blue-color);
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: normal;
+  transition: all 0.4s ease;
+}
+
+.issue-title:hover {
+  background: var(--secondary-blue-color);
+  transition: all 0.4s ease;
+}
+
+.issue-labels {
+  display: inline-flex;
+  margin: 10px;
+  align-items: center;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 586px) {
+  .issue-title {
+    word-break: break-word;
+    font-size: 16px;
+  }
+  .issue-body {
+    word-break: break-word;
+  }
+}

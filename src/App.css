@@ -1,0 +1,81 @@
+:root {
+  /* --main-pink-color: #e91e63; */
+  --main-pink-color: #424242;
+  --main-blue-color: #3f51b5;
+  --secondary-blue-color: #607d8b;
+  --secondary-grey-color: #cecece;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+input {
+  border: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder {
+  color: #cac6c6;
+}
+
+.container {
+  position: relative;
+  padding-bottom: 80px;
+  max-width: 85rem;
+  margin: auto;
+  width: 90%;
+}
+
+.zoom-element {
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+  opacity: 0.5;
+}
+
+.zoom-element:hover {
+  transform: scale(1.02);
+  color: var(--main-pink-color);
+  transition: all 0.4s ease-in-out;
+  opacity: 0.9;
+}

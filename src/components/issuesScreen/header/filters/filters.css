@@ -1,0 +1,42 @@
+.filter-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 400px;
+  height: 25px;
+}
+
+.filter-item {
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.filter-item:hover {
+  color: var(--secondary-blue-color);
+  transform: scale(1.01);
+  transition: transform 0.2s ease;
+}
+
+.filter-item--active {
+  font-weight: bold;
+  color: var(--main-pink-color);
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 586px) {
+  .filter-list {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-gap: 10px;
+    height: 100%;
+  }
+
+  .filter-item {
+    text-align: center;
+  }
+
+  .filter-section {
+    display: flex;
+  }
+}
